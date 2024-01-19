@@ -4,7 +4,7 @@
 GET http://localhost:1234/users
 
 ### Para crear un usuario
-POST http://localhost:1234/newUser
+POST http://localhost:1234/user
 Content-Type: application/json
 
 {
