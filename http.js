@@ -21,3 +21,8 @@ const server = http.createServer((req, res) => {
 server.listen(desiredPort, () => {
   console.log(`Server listening on port http://localhost:${desiredPort} `)
 })
+
+// Para mantener el servidor actualizado de los cambios en el código (cuando estamos en desarrollo)
+// node --watch http.js
+
+// Segunda alternativa: nodemon
