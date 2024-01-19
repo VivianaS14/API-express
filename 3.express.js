@@ -1,8 +1,33 @@
 const userJSON = require('./users/users.json')
 const express = require('express')
-const app = express()
 
+const app = express()
 app.disable('x-powered-by')
+
+// MIDDLEWARE
+app.use(express.json())
+
+// app.use((req, res, next) => {
+//   console.log('Mi primer middleware')
+//   // tracker la request a la base de datos
+//   // revisar si el usuario tiene cookies
+
+//   // Ej: El middleware puede hacer esta lógica y puede ser reutilizable para otras peticiones
+//   if (req.method !== 'POST') return next()
+//   if (req.headers['content-type'] !== 'application/json') return next()
+
+//   let body = ''
+//   req.on('data', chunk => {
+//     body += chunk.toString()
+//   })
+//   req.on('end', () => {
+//     const data = JSON.parse(body)
+//     data.timestamp = Date.now()
+//     req.body = data
+//     // Importante usar el 'next' para seguir con la request
+//     next()
+//   })
+// })
 
 // Express maneja por rutas
 // Cuando la app recibe un GET ('url', callback con la response)
@@ -18,23 +43,12 @@ app.get('/users', (req, res) => {
 })
 
 app.post('/user', (req, res) => {
-  let body = ''
-
-  // Escuchar el evento data donde esta el body del request
-  req.on('data', chunk => {
-    body += chunk.toString()
-  })
-
-  req.on('end', () => {
-    const data = JSON.parse(body)
-    // llamar a una base de datos para guardar la info
-    data.timestamp = Date.now()
-    res.status(201).json(data)
-  })
+  res.status(201).json(req.body)
 })
 
 // 404 Not Found -> importante que siempre sea el ultimo
 // Caso de uso para todos los métodos
+// La ultima a la que va a llegar
 app.use((req, res) => {
   res.status(404).send('404: Not Found')
 })

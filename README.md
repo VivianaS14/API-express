@@ -27,3 +27,9 @@
 Instala la extension `REST Client` en VSCode para probar las peticiones a la API desde el archivo: 
 
 `./api.http`
+
+## Middleware
+
+Es una función que se ejecuta entre la petición y la respuesta
+
+La request pasan primero por el middleware y procesar (extraer cookies, validar login, extraer info de json) algo previo al tratar el request y luego si procesa la request
