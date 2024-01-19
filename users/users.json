@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Linda R. Thompson",
+        "address": "999 Badwell Avenue Ocala, FL 34472",
+        "geolocation": "29.217039, -81.906733",
+        "phone": "352-680-0139",
+        "bornDay": "11-23-2004",
+        "zodiac": "Sagittarius",
+        "email": "LindaRThompson@superrito.com",
+        "user": "Ouster04"
+    },
+    {
+        "name": "Ulan Babosa Ferreira",
+        "address": "Rua Ursa, 1794, Patos de Minas-MG",
+        "geolocation": "-18.54461, -46.432364",
+        "phone": "(34) 5997-9906",
+        "bornDay": "08-21-1951",
+        "zodiac": "Leo",
+        "email": "LuanBarbosaFerreira@superrito.com",
+        "user": "Ruff51"
+    },
+    {
+        "name": "Dewei Ch'ang",
+        "address": "Boriñaur enparantza, 73, 07749 Es Migjorn Gran",
+        "geolocation": "40.106275, 4.115957",
+        "phone": "624 693 277",
+        "bornDay": "05-30-1984",
+        "zodiac": "Gemini",
+        "email": "DeweiChang@superrito.com",
+        "user": "Wene1984"
+    },
+    {
+        "name": "Amanda Boffin",
+        "address": "Dunajska 74, 6323 Strunjan",
+        "geolocation": "45.448663, 13.48915",
+        "phone": "051-439-055",
+        "bornDay": "02-02-1981",
+        "zodiac": "Aquarius",
+        "email": "AmandaBoffin@superrito.com",
+        "user": "Reocken"
+    }
+]

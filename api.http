@@ -1,0 +1,17 @@
+### Traer info de todos los usuarios
+GET http://localhost:1234/users
+
+### Para crear un usuario
+POST http://localhost:1234/newUser
+Content-Type: application/json
+
+{
+    "name": "Zudotefu",
+    "address": "4558 184th Street Edmonton, AB T5J 2R4",
+    "geolocation": "53.451943, -113.508199",
+    "phone": "780-288-2014",
+    "bornDay": "03-16-1974",
+    "zodiac": "Pisces",
+    "email": "Zudotefu@superrito.com",
+    "user": "Wasuce"
+}
