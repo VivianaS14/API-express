@@ -1,3 +1,5 @@
+### Instalar la extension REST Client para probar las request desde aqui! 👇🏻
+
 ### Traer info de todos los usuarios
 GET http://localhost:1234/users
 

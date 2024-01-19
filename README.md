@@ -20,3 +20,10 @@
 
  Es una clase global que se utiliza para trabajar con datos binarios (imágenes, archivos, criptografía, etc), todo lo diferente de cadenas de texto.
  Lee el archivo, guarda el binario en memoria y luego lo utiliza con ayuda de los headers
+
+
+## GET & POST request
+
+Instala la extension `REST Client` en VSCode para probar las peticiones a la API desde el archivo: 
+
+`./api.http`
